@@ -22,3 +22,17 @@ A work item is **Done** when:
 - [ ] Jira ticket moved to Done
 
 **Spikes** (learning tasks) are done when the findings are written down in `docs/learning-log.md`.
+
+## Medication journal (Etappe 0)
+
+Console application for tracking medications: name, dosage, date of start, and date of end (optional). This is the first stage of PHR: plain Java, Maven and JUnit 5. The code is in `medication-journal/`.
+
+**Requirements:** JDK 25, Maven 3.9+
+
+**Tests:**
+```
+cd medication-journal
+mvn test
+```
+
+Tests run automatically on Github Actions for every pull request and push to main
