@@ -105,4 +105,16 @@ class MedicationTest {
         assertNull(m3.end());
         assertNotSame(m3, m4);
     }
+
+    @Test
+    void isOngoingWithoutEndDate() {
+        Medication m = Medication.ongoing("Vitamin D", "1000 IE", TODAY);
+        assertTrue(m.isOngoing());
+    }
+
+    @Test
+    void isNotOngoingWithEndDate() {
+        Medication m = new Medication("Ibuprofen", "400 mg", TODAY, TODAY.plusDays(10));
+        assertFalse(m.isOngoing());
+    }
 }
