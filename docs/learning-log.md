@@ -33,3 +33,8 @@
 - `Comparator.comparing(...).thenComparing(...)` statt eigener `compareTo`-Logik, z. B. Laborwerte nach Datum sortieren
 - Generics sorgen für Typsicherheit zur Compile-Zeit: `JpaRepository<Visit, Long>` = Entity-Typ + ID-Typ
 
+## 2026-11-28 – Etappe 0
+
+**Erledigt**
+- Lambdas, funktionale Interfaces, Streams, Optional
+- Annotationen, Maven, JUnit 5
